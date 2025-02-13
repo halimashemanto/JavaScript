@@ -10,13 +10,13 @@
     <script>
         let leap = parseInt (prompt("Enter number"));
 
-        if(leap % 4==0) {
+        if(leap % 4 == 0 ) {
                 document.write(leap+ " is a leap year");
 
-                if(leap%400==0)
+                if( leap % 100 == 0 && leap % 400 == 0 )
                 document.write(leap + " is a leap year");
 
-                if(leap%100==0)
+                if(leap % 100 == 0 && leap % 4 == 0)
                 document.write(leap + " is a leap year");
 
 
