@@ -8,27 +8,25 @@
 <body>
 
     <script>
-        let leap = parseInt (prompt("Enter number"));
+        let leap = parseInt (prompt("Please Enter A Yerar."));
+        let leap1 = alert("Thank You for your Perticipents");
 
         if(leap % 4 == 0 ) {
-                document.write(leap+ " is a leap year");
-
-                if( leap % 100 == 0 && leap % 400 == 0 )
-                document.write(leap + " is a leap year");
-
-                if(leap % 100 == 0 && leap % 4 == 0)
-                document.write(leap + " is a leap year");
-
-
+            if(leap % 100 == 0){
+                if(leap % 400 == 0){
+                    document.write( leap + " is LEAP YEAR");
+                }
+            else{
+                document.write(leap + " is NOT leap year" );
+            }
+            }
+            else{
+                document.write(leap + " is LEAP YEAR");
+            }
         }
-
         else{
-
-            document.write(leap + " is not a leap year")
-
-
+            document.write(leap + " is NOT LEAP YEAR");
         }
-
 
     </script>
     
