@@ -8,11 +8,14 @@
 <body>
     <script>
         let input= parseInt(prompt('enter size'));
+        let array =[];
         let sum=0;
-        for(let i=1;i<=input;i++){
-            let number= parseInt(prompt('enter number'));
-            sum+=0;
+        for(let i=0;i<=input;i++){
+            let number= parseInt(prompt('enter  ' +(i+1)+ '  value'));
+            sum+=number;
+            array[i] = number;
         }
+       document.write(array + "<br>");
        document.write(sum);
 
     </script>
