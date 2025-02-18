@@ -9,25 +9,21 @@
 
 <body>
     <script>
-        let fibo = parseInt(prompt('enter 1st number.'));
-        let n  = 0;
+        let fibo = parseInt(prompt('Please Enter Numjber.'));
+        let n = 0;
         let n1 = 1;
         let sum = 0;
-        let totalsum = 0;
 
-         document.write(n +"<br> ");
-         document.write(n1 +" <br>");
+        document.write(n + '  ');
+        document.write(n1 + '  ');
 
-        for (i = 3; i <= fibo; i++) {
-            sum = n+n1;
-             document.write(sum+' <br>');
-            totalsum+=sum;
-            n=n1;
-            n1=sum;
+        for (i = 3; i <= fibo; i++) 
+        { 
+             sum = n + n1;
+             document.write(sum + '  ');
+             n = n1;
+             n1 = sum;
         }
-        
-        document.write(totalsum +" ");
     </script>
 </body>
-
 </html>
