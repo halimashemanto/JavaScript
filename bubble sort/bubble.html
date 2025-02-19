@@ -6,22 +6,20 @@
     <title>bubble sort</title>
 </head>
 <body>
-    <script>
-        let sort =[90,3,8,70,20,6,10];
+   
+  <script>
+    let sort=[20,69,29,36,25,1,369,14,45,3,100,258,2];
 
-        for(let i=0; i<sort.length-1; i++){
-            for(let j=0; j<sort.length-1-i; j++){
-                if(sort[j]>sort[j+1]){
-                    let temp = sort[j];
-                    sort[j] = sort[j+1];
-                    sort[j+1] = temp;
-
-                }
-
+    for(let i=0; i<sort.length-1; i++){
+        for(let j=0; j<sort.length-1-i; j++){
+            if(sort[j]>sort[j+1]){
+                let temp=sort[j];
+                sort[j]= sort[j+1];
+                sort[j+1]= temp;
             }
         }
-        document.write(sort);
-    </script>
-    
+    }
+    document.write("Bubble Sorting :"+" " + sort);
+  </script>
 </body>
 </html>
