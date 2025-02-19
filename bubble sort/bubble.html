@@ -6,6 +6,7 @@
     <title>bubble sort</title>
 </head>
 <body>
+<<<<<<< HEAD
     <script>
         let sort = [40,2,13,90,73,79,55,23,43,12,67,1,100,95,4];
         
@@ -23,5 +24,22 @@
     document.write("Bubble Sort  " + " = " + sort);
     </script>
     
+=======
+   
+  <script>
+    let sort=[20,69,29,36,25,1,369,14,45,3,100,258,2];
+
+    for(let i=0; i<sort.length-1; i++){
+        for(let j=0; j<sort.length-1-i; j++){
+            if(sort[j]>sort[j+1]){
+                let temp=sort[j];
+                sort[j]= sort[j+1];
+                sort[j+1]= temp;
+            }
+        }
+    }
+    document.write("Bubble Sorting :"+" " + sort);
+  </script>
+>>>>>>> 2587e0802697e096496326bfbc1615b45f8e9719
 </body>
 </html>
