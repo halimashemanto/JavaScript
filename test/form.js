@@ -21,6 +21,6 @@ function submitForm() {
     let newWindow = window.open('', '_blank');
     newWindow.document.write(output + " ");
 
-    let myForm = document.getElementById('myForm');
+    // document.getElementById('myForm');
 
 }
