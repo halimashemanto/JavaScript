@@ -3,7 +3,7 @@ function submitForm() {
     let contact = document.getElementById('contact').value;
     let remarks = document.getElementById('remarks').value;
     let gender = document.querySelector('input[name=gender]:checked').value;
-    let course = document.querySelectorAll('input[name=course]:checked');
+    let course = document.querySelectorAll('input[name=course]:checked').value;
     let location = document.getElementById('location').value;
 
     let courseValue = [];
@@ -19,7 +19,8 @@ function submitForm() {
         + "location: " + location;
 
     let newWindow = window.open('', '_blank');
-    newWindow.document.write(output + " ");
+    newWindow.document.write(output);
+
 
     let myForm = document.getElementById('myForm');
 
