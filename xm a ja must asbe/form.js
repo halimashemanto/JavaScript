@@ -22,6 +22,6 @@ function submitForm() {
     newWindow.document.write(output);
 
 
-    let myForm = document.getElementById('myForm');
+    // document.getElementById('myForm');
 
 }
